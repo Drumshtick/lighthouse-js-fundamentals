@@ -1,23 +1,10 @@
-var month = 12;
+var num = 99;
 
-switch(month) {
-  case 1:
-  case 3:
-  case 5:
-  case 7:
-  case 8:
-  case 10:
-  case 12:
-    days = 31;
-    break;
-  case 4:
-  case 6:
-  case 9:
-  case 11:
-    days = 30;
-    break;
-  case 2:
-    days = 28;
+while (num > 0) {
+    if (num > 1) {
+        console.log(num + " bottles of juice on the wall! "+ num +" bottles of juice! Take one down, pass it around... "+ (num -1) +" bottles of juice on the wall!");
+    } else {
+        console.log("1 bottle of juice on the wall! 1 bottle of juice! Take one down, pass it around... 0 bottles of juice on the wall!");
+    }
+    num -= 1;
 }
-
-console.log("There are " + days + " days in this month.");
